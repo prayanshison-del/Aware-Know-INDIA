@@ -1,0 +1,855 @@
+/* =========================================
+   KNOW INDIA - CONSTITUTION PAGE
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    min-height: 70px;
+
+    padding: 15px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: white;
+
+    border-bottom: 1px solid #e2e8f0;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+.logo span {
+    margin-left: 5px;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #334155;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.navbar nav a:hover {
+    color: #ea580c;
+}
+
+.menu-btn {
+    display: none;
+
+    background: none;
+    border: none;
+
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+
+/* ================= HERO ================= */
+
+.constitution-hero {
+    min-height: 420px;
+
+    padding: 70px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff7ed,
+            #eff6ff
+        );
+}
+
+.hero-content {
+    max-width: 720px;
+}
+
+.small-title {
+    color: #ea580c;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.hero-content h1 {
+    margin-top: 10px;
+
+    font-size: clamp(42px, 6vw, 65px);
+
+    color: #1e3a8a;
+}
+
+.hero-content > p:not(.small-title) {
+    margin-top: 15px;
+
+    color: #64748b;
+
+    font-size: 17px;
+}
+
+.hero-buttons {
+    margin-top: 25px;
+
+    display: flex;
+
+    gap: 12px;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 13px 22px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.primary-btn {
+    border: none;
+
+    background: #ea580c;
+
+    color: white;
+}
+
+.secondary-btn {
+    background: white;
+
+    color: #1e3a8a;
+
+    border: 2px solid #1e3a8a;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+    transform: translateY(-2px);
+}
+
+.hero-symbol {
+    font-size: 150px;
+
+    padding: 40px;
+
+    background: white;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 40px rgba(15, 23, 42, 0.1);
+}
+
+
+/* ================= PROGRESS ================= */
+
+.progress-section {
+    padding: 25px 7%;
+
+    background: white;
+}
+
+.progress-box {
+    max-width: 900px;
+
+    margin: auto;
+}
+
+.progress-box > div:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-box span {
+    font-weight: bold;
+}
+
+.progress-box strong {
+    color: #ea580c;
+}
+
+.progress-bar {
+    height: 10px;
+
+    margin-top: 10px;
+
+    background: #e2e8f0;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 0%;
+
+    height: 100%;
+
+    background: #ea580c;
+
+    transition: width 0.5s;
+}
+
+
+/* ================= GENERAL SECTION ================= */
+
+.content-section,
+.duties-section,
+.preamble-section,
+.quiz-section {
+    padding: 80px 7%;
+}
+
+.section-heading {
+    max-width: 700px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin-top: 8px;
+
+    font-size: 35px;
+
+    color: #1e3a8a;
+}
+
+.section-heading > p:last-child {
+    margin-top: 8px;
+
+    color: #64748b;
+}
+
+
+/* ================= BASIC INFO ================= */
+
+.info-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.info-card {
+    padding: 25px;
+
+    background: white;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #fb923c;
+
+    box-shadow:
+        0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+.card-icon {
+    font-size: 38px;
+}
+
+.info-card h3 {
+    margin-top: 15px;
+
+    color: #1e3a8a;
+}
+
+.info-card p {
+    margin-top: 10px;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+.info-card button,
+.right-card button {
+    margin-top: 18px;
+
+    padding: 9px 14px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #eff6ff;
+
+    color: #1e3a8a;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* ================= INFO BOX ================= */
+
+.info-box {
+    max-width: 900px;
+
+    margin: 30px auto 0;
+}
+
+.info-detail {
+    padding: 25px;
+
+    background: white;
+
+    border-left: 5px solid #ea580c;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 8px 20px rgba(15, 23, 42, 0.07);
+}
+
+.info-detail h3 {
+    color: #1e3a8a;
+}
+
+.info-detail p {
+    margin-top: 10px;
+
+    color: #475569;
+}
+
+
+/* ================= PREAMBLE ================= */
+
+.preamble-section {
+    background:
+        linear-gradient(
+            135deg,
+            #eff6ff,
+            #fff7ed
+        );
+}
+
+.preamble-card {
+    max-width: 850px;
+
+    margin: auto;
+
+    padding: 45px;
+
+    text-align: center;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 35px rgba(15, 23, 42, 0.08);
+}
+
+.preamble-icon {
+    font-size: 65px;
+}
+
+.preamble-card h3 {
+    margin-top: 15px;
+
+    color: #1e3a8a;
+
+    font-size: 25px;
+}
+
+.preamble-card > p {
+    margin-top: 15px;
+
+    color: #64748b;
+}
+
+.preamble-keywords {
+    margin-top: 25px;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.preamble-keywords span {
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    background: #fff7ed;
+
+    color: #c2410c;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.learn-btn {
+    margin-top: 25px;
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #1e3a8a;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* ================= RIGHTS ================= */
+
+.rights-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.right-card {
+    padding: 25px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    border: 1px solid #e2e8f0;
+
+    transition: 0.3s;
+}
+
+.right-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+.number {
+    color: #ea580c;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.right-card h3 {
+    margin-top: 10px;
+
+    color: #1e3a8a;
+}
+
+.right-card p {
+    margin-top: 10px;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+.right-info {
+    max-width: 850px;
+
+    margin: 30px auto 0;
+}
+
+.right-detail {
+    padding: 25px;
+
+    background: #eff6ff;
+
+    border-radius: 12px;
+}
+
+.right-detail h3 {
+    color: #1e3a8a;
+}
+
+.right-detail p {
+    margin-top: 8px;
+
+    color: #475569;
+}
+
+
+/* ================= DUTIES ================= */
+
+.duties-section {
+    background: white;
+}
+
+.duties-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.duty-card {
+    padding: 25px;
+
+    background: #f8fafc;
+
+    border-radius: 15px;
+
+    border: 1px solid #e2e8f0;
+}
+
+.duty-card > span {
+    color: #ea580c;
+
+    font-weight: bold;
+}
+
+.duty-card h3 {
+    margin-top: 10px;
+
+    color: #1e3a8a;
+}
+
+.duty-card p {
+    margin-top: 8px;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+.duty-note {
+    max-width: 850px;
+
+    margin: 30px auto 0;
+
+    padding: 25px;
+
+    background: #fff7ed;
+
+    border-radius: 12px;
+
+    text-align: center;
+}
+
+.duty-note h3 {
+    color: #c2410c;
+}
+
+.duty-note p {
+    margin-top: 8px;
+
+    color: #64748b;
+}
+
+
+/* ================= QUIZ ================= */
+
+.quiz-section {
+    background:
+        linear-gradient(
+            135deg,
+            #fff7ed,
+            #eff6ff
+        );
+}
+
+.quiz-card {
+    max-width: 700px;
+
+    margin: auto;
+
+    padding: 35px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 15px 35px rgba(15, 23, 42, 0.08);
+}
+
+.question-number {
+    color: #ea580c;
+
+    font-weight: bold;
+
+    font-size: 13px;
+}
+
+.quiz-card h3 {
+    margin-top: 10px;
+
+    color: #1e3a8a;
+
+    font-size: 20px;
+}
+
+.options {
+    margin-top: 25px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+}
+
+.options button {
+    padding: 14px;
+
+    text-align: left;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    background: white;
+
+    cursor: pointer;
+
+    font-weight: 600;
+}
+
+.options button:hover {
+    border-color: #ea580c;
+
+    background: #fff7ed;
+}
+
+.quiz-result {
+    min-height: 30px;
+
+    margin-top: 20px;
+
+    font-weight: bold;
+}
+
+.correct {
+    color: #15803d;
+}
+
+.wrong {
+    color: #dc2626;
+}
+
+.next-btn {
+    margin-top: 15px;
+
+    padding: 11px 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #1e3a8a;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* ================= BACK ================= */
+
+.back-section {
+    padding: 35px;
+
+    text-align: center;
+
+    background: white;
+}
+
+.back-section a {
+    color: #1e3a8a;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    padding: 40px;
+
+    text-align: center;
+
+    background: #172554;
+
+    color: white;
+}
+
+footer p {
+    margin-top: 7px;
+
+    color: #cbd5e1;
+}
+
+.copyright {
+    font-size: 13px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    .info-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .duties-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .rights-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .constitution-hero {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .navbar nav {
+        display: none;
+
+        position: absolute;
+
+        top: 70px;
+
+        left: 0;
+
+        width: 100%;
+
+        padding: 20px;
+
+        background: white;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        border-bottom: 1px solid #e2e8f0;
+    }
+
+    .navbar nav.show {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .info-grid,
+    .rights-grid,
+    .duties-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-symbol {
+        font-size: 90px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .options {
+        grid-template-columns: 1fr;
+    }
+
+    .preamble-card,
+    .quiz-card {
+        padding: 25px;
+    }
+
+}

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Problem - Know India</title>
+
+    <link rel="stylesheet" href="../css/my-problem.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🇮🇳 Know India
+        </div>
+
+        <div class="nav-links">
+
+            <a href="../index.html">Home</a>
+
+            <a href="constitution.html">
+                Constitution
+            </a>
+
+            <a href="rights.html">
+                Rights & Duties
+            </a>
+
+            <a href="government.html">
+                Government
+            </a>
+
+            <a href="india.html">
+                Know India
+            </a>
+
+            <a href="schemes.html">
+                Schemes
+            </a>
+
+            <a href="quiz.html">
+                Smart Quiz
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="tag">
+                🆘 SMART GUIDANCE
+            </span>
+
+            <h1>
+                My Problem
+            </h1>
+
+            <p>
+                Select a problem category and get
+                simple awareness-based guidance.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTRO -->
+
+    <section class="intro section">
+
+        <h2>
+            💡 How My Problem Works
+        </h2>
+
+        <div class="steps">
+
+            <div class="step">
+
+                <div class="step-number">
+                    1
+                </div>
+
+                <h3>
+                    Select Category
+                </h3>
+
+                <p>
+                    Choose the category related to
+                    your problem.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    2
+                </div>
+
+                <h3>
+                    Select Problem
+                </h3>
+
+                <p>
+                    Choose the problem you want
+                    information about.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    3
+                </div>
+
+                <h3>
+                    Get Guidance
+                </h3>
+
+                <p>
+                    Receive simple guidance and
+                    relevant learning resources.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    4
+                </div>
+
+                <h3>
+                    Verify
+                </h3>
+
+                <p>
+                    Check the relevant official
+                    source before taking action.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROBLEM SOLVER -->
+
+    <section class="problem-section section">
+
+        <h2>
+            🆘 Tell Us About Your Problem
+        </h2>
+
+        <p class="section-text">
+            Choose a category and then select
+            the problem you want to understand.
+        </p>
+
+
+        <!-- CATEGORY -->
+
+        <div class="form-box">
+
+            <label for="categorySelect">
+                Select Problem Category
+            </label>
+
+            <select
+                id="categorySelect"
+                onchange="loadProblems()">
+
+                <option value="">
+                    -- Select Category --
+                </option>
+
+                <option value="rights">
+                    Rights & Duties
+                </option>
+
+                <option value="government">
+                    Government Services
+                </option>
+
+                <option value="schemes">
+                    Government Schemes
+                </option>
+
+                <option value="education">
+                    Education
+                </option>
+
+                <option value="women">
+                    Women Awareness
+                </option>
+
+                <option value="cyber">
+                    Digital / Cyber Awareness
+                </option>
+
+                <option value="environment">
+                    Environment
+                </option>
+
+            </select>
+
+
+            <!-- PROBLEM -->
+
+            <label for="problemSelect">
+                Select Your Problem
+            </label>
+
+            <select
+                id="problemSelect"
+                disabled
+                onchange="showGuidance()">
+
+                <option value="">
+                    -- Select Problem --
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- GUIDANCE -->
+
+        <div
+            id="guidanceBox"
+            class="guidance-box">
+
+            <div class="guidance-placeholder">
+
+                <div class="big-icon">
+                    💡
+                </div>
+
+                <h3>
+                    Guidance will appear here
+                </h3>
+
+                <p>
+                    Select a category and problem
+                    to get information.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- IMPORTANT NOTE -->
+
+    <section class="note-section section">
+
+        <div class="note-box">
+
+            <h2>
+                ⚠️ Important
+            </h2>
+
+            <p>
+                Know India provides general awareness
+                and educational guidance. It does not
+                replace professional, legal or official
+                advice.
+            </p>
+
+            <p>
+                Always verify current information,
+                eligibility, procedures and contact
+                details through the relevant official
+                source.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- RELATED MODULES -->
+
+    <section class="related section">
+
+        <h2>
+            📚 Explore More
+        </h2>
+
+        <div class="related-grid">
+
+            <a href="rights.html" class="related-card">
+                ⚖️
+                <h3>
+                    Rights & Duties
+                </h3>
+                <p>
+                    Learn about Fundamental Rights
+                    and Duties.
+                </p>
+            </a>
+
+
+            <a href="government.html" class="related-card">
+                🏛️
+                <h3>
+                    Government
+                </h3>
+                <p>
+                    Understand government institutions
+                    and levels.
+                </p>
+            </a>
+
+
+            <a href="schemes.html" class="related-card">
+                📋
+                <h3>
+                    Government Schemes
+                </h3>
+                <p>
+                    Explore scheme-related awareness
+                    information.
+                </p>
+            </a>
+
+
+            <a href="quiz.html" class="related-card">
+                🧠
+                <h3>
+                    Smart Quiz
+                </h3>
+                <p>
+                    Test your knowledge and identify
+                    weak topics.
+                </p>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>
+            🇮🇳 Know India
+        </h3>
+
+        <p>
+            Know Your Rights. Know Your India.
+            Be an Aware Citizen.
+        </p>
+
+        <p>
+            © 2026 Know India
+        </p>
+
+    </footer>
+
+
+    <script src="../js/my-problem.js"></script>
+
+</body>
+
+</html>

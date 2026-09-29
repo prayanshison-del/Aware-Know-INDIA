@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Social Issues | Know India</title>
+
+    <link rel="stylesheet" href="../css/social-issues.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+
+    <div class="logo">🇮🇳 Know India</div>
+
+    <div class="menu" id="menu">
+        <a href="../index.html">Home</a>
+        <a href="constitution.html">Constitution</a>
+        <a href="rights.html">Rights & Duties</a>
+        <a href="government.html">Government</a>
+        <a href="india.html">Know India</a>
+        <a href="social-issues.html">Social Issues</a>
+    </div>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+</nav>
+
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="badge">🌍 SOCIAL AWARENESS</span>
+
+        <h1>Social Issues</h1>
+
+        <p>
+            Learn about important social issues in simple language
+            and understand how awareness can help build a responsible society.
+        </p>
+
+        <button onclick="scrollToSection('issues')">
+            Explore Issues ↓
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- INTRODUCTION -->
+<section class="section">
+
+    <h2>🌍 What are Social Issues?</h2>
+
+    <p class="intro">
+        Social issues are challenges that affect individuals,
+        communities or society. Understanding these issues
+        can help people become more aware and responsible citizens.
+    </p>
+
+</section>
+
+
+<!-- SOCIAL ISSUES -->
+<section class="section issues-section" id="issues">
+
+    <h2>📚 Important Social Issues</h2>
+
+    <p class="section-subtitle">
+        Click on an issue to learn more.
+    </p>
+
+
+    <div class="issue-grid">
+
+        <!-- WOMEN -->
+        <div class="issue-card" onclick="showIssue('women')">
+
+            <div class="issue-icon">👩</div>
+
+            <h3>Women Empowerment</h3>
+
+            <p>
+                Awareness about equal opportunities,
+                education and participation.
+            </p>
+
+            <button>Learn More</button>
+
+        </div>
+
+
+        <!-- EDUCATION -->
+        <div class="issue-card" onclick="showIssue('education')">
+
+            <div class="issue-icon">📚</div>
+
+            <h3>Education</h3>
+
+            <p>
+                Awareness about access to education
+                and the importance of learning.
+            </p>
+
+            <button>Learn More</button>
+
+        </div>
+
+
+        <!-- ENVIRONMENT -->
+        <div class="issue-card" onclick="showIssue('environment')">
+
+            <div class="issue-icon">🌱</div>
+
+            <h3>Environment</h3>
+
+            <p>
+                Awareness about protecting natural
+                resources and the environment.
+            </p>
+
+            <button>Learn More</button>
+
+        </div>
+
+
+        <!-- EQUALITY -->
+        <div class="issue-card" onclick="showIssue('equality')">
+
+            <div class="issue-icon">⚖️</div>
+
+            <h3>Social Equality</h3>
+
+            <p>
+                Understanding equality, dignity
+                and respect for all people.
+            </p>
+
+            <button>Learn More</button>
+
+        </div>
+
+
+        <!-- HEALTH -->
+        <div class="issue-card" onclick="showIssue('health')">
+
+            <div class="issue-icon">🏥</div>
+
+            <h3>Health Awareness</h3>
+
+            <p>
+                Basic awareness about health,
+                hygiene and public health.
+            </p>
+
+            <button>Learn More</button>
+
+        </div>
+
+
+        <!-- CYBER -->
+        <div class="issue-card" onclick="showIssue('cyber')">
+
+            <div class="issue-icon">💻</div>
+
+            <h3>Digital Awareness</h3>
+
+            <p>
+                Learn about responsible and safe
+                use of digital technology.
+            </p>
+
+            <button>Learn More</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ISSUE INFORMATION -->
+<section class="information-section">
+
+    <div class="information-box" id="informationBox">
+
+        <h2>🔎 Select an Issue</h2>
+
+        <p>
+            Click on any issue above to see its
+            simple explanation and awareness tips.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- CITIZEN ACTION -->
+<section class="section action-section">
+
+    <h2>🤝 What Can We Do?</h2>
+
+    <p class="intro">
+        Awareness is an important first step. Students and citizens
+        can contribute by learning, sharing reliable information,
+        respecting others and using appropriate official channels
+        when assistance is needed.
+    </p>
+
+
+    <div class="action-grid">
+
+        <div class="action-card">
+            <span>📖</span>
+            <h3>Learn</h3>
+            <p>
+                Understand an issue using reliable information.
+            </p>
+        </div>
+
+
+        <div class="action-card">
+            <span>🔎</span>
+            <h3>Verify</h3>
+            <p>
+                Check important information through reliable sources.
+            </p>
+        </div>
+
+
+        <div class="action-card">
+            <span>🤝</span>
+            <h3>Respect</h3>
+            <p>
+                Treat people with dignity and respect.
+            </p>
+        </div>
+
+
+        <div class="action-card">
+            <span>📢</span>
+            <h3>Spread Awareness</h3>
+            <p>
+                Share useful and verified awareness information.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- AWARENESS CHECK -->
+<section class="quiz-section">
+
+    <div class="quiz-container">
+
+        <h2>🧠 Awareness Check</h2>
+
+        <p id="question"></p>
+
+        <div id="options" class="options"></div>
+
+        <p id="quizResult"></p>
+
+        <button
+            id="nextBtn"
+            onclick="nextQuestion()"
+            style="display:none;">
+            Next Question →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- SOURCE -->
+<section class="source-section">
+
+    <h2>🔎 Know More</h2>
+
+    <p>
+        For detailed information or assistance related to a social issue,
+        users should consult relevant official government or
+        institutional sources.
+    </p>
+
+    <button onclick="showSourceMessage()">
+        View Guidance
+    </button>
+
+    <p id="sourceMessage"></p>
+
+</section>
+
+
+<!-- BACK HOME -->
+<div class="back-home">
+
+    <a href="../index.html">
+        ← Back to Home
+    </a>
+
+</div>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <h3>🇮🇳 Know India</h3>
+
+    <p>
+        Know Your Rights. Know Your India.
+        Be an Aware Citizen.
+    </p>
+
+    <p>© 2026 Know India</p>
+
+</footer>
+
+
+<script src="../js/social-issues.js"></script>
+
+</body>
+</html><button onclick="openModule('social')">
+    Explore Social Issues
+</button>

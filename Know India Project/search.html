@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Search - Know India</title>
+
+    <link rel="stylesheet" href="../css/search.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            🇮🇳 Know India
+        </div>
+
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="constitution.html">Constitution</a>
+            <a href="rights.html">Rights & Duties</a>
+            <a href="government.html">Government</a>
+            <a href="india.html">Know India</a>
+            <a href="social-issues.html">Social Issues</a>
+            <a href="schemes.html">Schemes</a>
+            <a href="quiz.html">Smart Quiz</a>
+        </div>
+
+    </nav>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <span class="tag">🔎 SMART SEARCH</span>
+
+        <h1>Search Know India</h1>
+
+        <p>
+            Search for topics, rights, government information,
+            schemes and awareness content.
+        </p>
+
+    </section>
+
+
+    <!-- SEARCH -->
+    <section class="search-section">
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search e.g. Fundamental Rights, schemes, Uttar Pradesh..."
+                onkeyup="searchContent()"
+            >
+
+            <button onclick="searchContent()">
+                🔍 Search
+            </button>
+
+        </div>
+
+        <div class="suggestions">
+
+            <button onclick="quickSearch('Fundamental Rights')">
+                Fundamental Rights
+            </button>
+
+            <button onclick="quickSearch('Government')">
+                Government
+            </button>
+
+            <button onclick="quickSearch('Uttar Pradesh')">
+                Uttar Pradesh
+            </button>
+
+            <button onclick="quickSearch('Government Schemes')">
+                Government Schemes
+            </button>
+
+            <button onclick="quickSearch('Digital Awareness')">
+                Digital Awareness
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESULTS -->
+    <section class="results-section">
+
+        <div class="result-header">
+
+            <h2>🔎 Search Results</h2>
+
+            <p id="resultCount">
+                Search something to see results.
+            </p>
+
+        </div>
+
+        <div
+            id="resultsContainer"
+            class="results-container">
+
+        </div>
+
+    </section>
+
+
+    <!-- SEARCH INFORMATION -->
+    <section class="info-section">
+
+        <div class="info-box">
+
+            <h2>💡 Smart Search</h2>
+
+            <p>
+                Know India's Smart Search helps users find
+                relevant learning modules quickly.
+            </p>
+
+            <div class="info-grid">
+
+                <div>
+                    📚
+                    <strong>Learn</strong>
+                    <p>Find educational information.</p>
+                </div>
+
+                <div>
+                    🧠
+                    <strong>Quiz</strong>
+                    <p>Test your knowledge.</p>
+                </div>
+
+                <div>
+                    🆘
+                    <strong>Guidance</strong>
+                    <p>Explore problem-related topics.</p>
+                </div>
+
+                <div>
+                    🔎
+                    <strong>Explore</strong>
+                    <p>Discover related modules.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>🇮🇳 Know India</h3>
+
+        <p>
+            Know Your Rights. Know Your India.
+            Be an Aware Citizen.
+        </p>
+
+        <p>© 2026 Know India</p>
+
+    </footer>
+
+
+    <script src="../js/search.js"></script>
+
+</body>
+
+</html>

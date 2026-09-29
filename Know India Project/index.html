@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Know India | Citizen & Social Awareness Portal</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🇮🇳 <span>Know India</span>
+        </div>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+
+            <a href="#modules">Learn</a>
+
+            <a href="#problem">My Problem</a>
+
+            <a href="#modules">Explore India</a>
+
+            <a href="#modules">Quiz</a>
+
+            <a href="#modules">Schemes</a>
+
+            <a href="#search">Search</a>
+        </nav>
+
+        <button class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="welcome">
+                🇮🇳 Welcome to
+            </p>
+
+            <h1>
+                KNOW <span>INDIA</span>
+            </h1>
+
+            <h2>
+                Citizen & Social Awareness Portal
+            </h2>
+
+            <p class="tagline">
+                Know Your Rights. Know Your India.
+                Be an Aware Citizen.
+            </p>
+
+            <p class="hero-text">
+                Learn about India, the Constitution, government,
+                rights & duties, social issues and government
+                schemes — all in one simple and interactive platform.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="btn primary-btn" onclick="startLearning()">
+                    Start Learning
+                </button>
+
+                <button class="btn secondary-btn" onclick="showProblem()">
+                    🆘 My Problem
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="india-icon">
+                🇮🇳
+            </div>
+
+            <h3>
+                Learn • Understand • Participate
+            </h3>
+
+            <p>
+                Explore important information
+                and test your knowledge.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SEARCH SECTION ================= -->
+
+    <section class="search-section" id="search">
+
+        <h2>
+            🔎 Search Know India
+        </h2>
+
+        <p>
+            Search for a topic, state or awareness category.
+        </p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Example: Fundamental Duties, Uttar Pradesh..."
+                onkeyup="searchTopic()"
+            >
+
+            <button onclick="searchTopic()">
+                Search
+            </button>
+
+        </div>
+
+        <div id="searchResult" class="search-result">
+        </div>
+
+    </section>
+
+
+    <!-- ================= MODULES ================= -->
+
+    <section class="modules" id="modules">
+
+        <div class="section-heading">
+
+            <p class="small-title">
+                EXPLORE
+            </p>
+
+            <h2>
+                Learn About India 🇮🇳
+            </h2>
+
+            <p>
+                Explore different sections of our awareness portal.
+            </p>
+
+        </div>
+
+
+        <div class="module-grid">
+
+
+            <!-- Constitution -->
+
+            <div class="module-card"
+                 onclick="openModule('constitution')">
+
+                <div class="module-icon">
+                    📜
+                </div>
+
+                <h3>
+                    Indian Constitution
+                </h3>
+
+                <p>
+                    Learn about the Constitution,
+                    Preamble, Fundamental Rights
+                    and Fundamental Duties.
+                </p>
+
+                <span>
+                    Explore →
+                </span>
+
+            </div>
+
+
+            <!-- Government -->
+
+            <div class="module-card"
+                 onclick="openModule('government')">
+
+                <div class="module-icon">
+                    🏛️
+                </div>
+
+                <h3>
+                    Indian Government
+                </h3>
+
+                <p>
+                    Understand the basic structure
+                    of the Indian Government and
+                    important institutions.
+                </p>
+
+                <span>
+                    Explore →
+                </span>
+
+            </div>
+
+
+            <!-- Rights -->
+
+            <div class="module-card"
+                 onclick="openModule('rights')">
+
+                <div class="module-icon">
+                    ⚖️
+                </div>
+
+                <h3>
+                    Rights & Duties
+                </h3>
+
+                <p>
+                    Understand your rights and
+                    fundamental duties through
+                    simple explanations.
+                </p>
+
+                <span>
+                    Explore →
+                </span>
+
+            </div>
+
+
+            <!-- Know India -->
+
+            <div class="module-card"
+                 onclick="openModule('india')">
+
+                <div class="module-icon">
+                    🌍
+                </div>
+
+                <h3>
+                    Know Your India
+                </h3>
+
+                <p>
+                    Explore Indian states, geography,
+                    culture, famous places and facts.
+                </p>
+
+                <span>
+                    Explore →
+                </span>
+
+            </div>
+
+
+            <!-- Social Issues -->
+
+            <div class="module-card"
+                 onclick="openModule('social-issues')">
+
+                <div class="module-icon">
+                    👩‍👧
+                </div>
+
+                <h3>
+                    Social Issues
+                </h3>
+
+                <p>
+                    Learn about important social
+                    issues, their causes and
+                    awareness measures.
+                </p>
+
+                <span>
+                    Explore →
+                </span>
+
+            </div>
+
+
+            <!-- Schemes -->
+
+            <div class="module-card"
+                 onclick="openModule('schemes')">
+
+                <div class="module-icon">
+                    🏛️
+                </div>
+
+                <h3>
+                    Government Schemes
+                </h3>
+
+                <p>
+                    Explore selected government
+                    schemes, objectives, benefits
+                    and basic eligibility.
+                </p>
+
+                <span>
+                    Explore →
+                </span>
+
+            </div>
+
+
+            <!-- Quiz -->
+
+            <div class="module-card quiz-card"
+                 onclick="openModule('quiz')">
+
+                <div class="module-icon">
+                    🧠
+                </div>
+
+                <h3>
+                    Smart Quiz
+                </h3>
+
+                <p>
+                    Test your knowledge through
+                    interactive questions and
+                    check your score.
+                </p>
+
+                <span>
+                    Take Quiz →
+                </span>
+
+            </div>
+
+
+            <!-- My Problem -->
+
+            <div class="module-card problem-card"
+                 onclick="showProblem()">
+
+                <div class="module-icon">
+                    🆘
+                </div>
+
+                <h3>
+                    My Problem
+                </h3>
+
+                <p>
+                    Select a problem category and
+                    get relevant awareness information
+                    and guidance.
+                </p>
+
+                <span>
+                    Get Guidance →
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROBLEM SECTION ================= -->
+
+    <section class="problem-section" id="problem">
+
+        <div class="problem-content">
+
+            <p class="small-title">
+                NEED GUIDANCE?
+            </p>
+
+            <h2>
+                🆘 My Problem
+            </h2>
+
+            <p>
+                Select the area related to your problem
+                and explore relevant awareness information.
+            </p>
+
+            <div class="problem-options">
+
+                <button onclick="selectProblem('Education')">
+                    📚 Education
+                </button>
+
+                <button onclick="selectProblem('Government Service')">
+                    🏛️ Government Service
+                </button>
+
+                <button onclick="selectProblem('Consumer')">
+                    🛒 Consumer
+                </button>
+
+                <button onclick="selectProblem('Digital Safety')">
+                    🔐 Digital Safety
+                </button>
+
+                <button onclick="selectProblem('Women & Child')">
+                    👩‍👧 Women & Child
+                </button>
+
+                <button onclick="selectProblem('Environment')">
+                    🌱 Environment
+                </button>
+
+            </div>
+
+            <div id="problemResult" class="problem-result">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= WHY KNOW INDIA ================= -->
+
+    <section class="why-section">
+
+        <div class="section-heading">
+
+            <p class="small-title">
+                OUR PURPOSE
+            </p>
+
+            <h2>
+                Why Know India?
+            </h2>
+
+        </div>
+
+
+        <div class="why-grid">
+
+            <div class="why-card">
+                <span>📚</span>
+                <h3>Easy Learning</h3>
+                <p>
+                    Important civic information
+                    presented in a simple way.
+                </p>
+            </div>
+
+
+            <div class="why-card">
+                <span>🔎</span>
+                <h3>Easy Discovery</h3>
+                <p>
+                    Find relevant topics through
+                    search and organized modules.
+                </p>
+            </div>
+
+
+            <div class="why-card">
+                <span>🧠</span>
+                <h3>Interactive Learning</h3>
+                <p>
+                    Test your knowledge with
+                    interactive quizzes.
+                </p>
+            </div>
+
+
+            <div class="why-card">
+                <span>🇮🇳</span>
+                <h3>Responsible Citizenship</h3>
+                <p>
+                    Encourage awareness and
+                    responsible participation.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            🇮🇳 KNOW INDIA
+        </div>
+
+        <p>
+            Learn • Understand • Participate
+        </p>
+
+        <p class="copyright">
+            © 2026 Know India | Citizen & Social Awareness Portal
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript File -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Indian Constitution | Know India</title>
+
+    <link rel="stylesheet" href="../css/constitution.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🇮🇳 <span>Know India</span>
+        </div>
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="#basics">Constitution</a>
+            <a href="#preamble">Preamble</a>
+            <a href="#rights">Rights</a>
+            <a href="#duties">Duties</a>
+        </nav>
+
+        <button class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="constitution-hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                KNOW YOUR CONSTITUTION
+            </p>
+
+            <h1>
+                📜 Indian Constitution
+            </h1>
+
+            <p>
+                Understand the Constitution, Preamble,
+                Fundamental Rights and Fundamental Duties
+                in simple language.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button
+                    class="primary-btn"
+                    onclick="scrollToSection('basics')">
+                    Start Learning
+                </button>
+
+                <button
+                    class="secondary-btn"
+                    onclick="scrollToSection('quick-check')">
+                    🧠 Quick Check
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="hero-symbol">
+            📜
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROGRESS ================= -->
+
+    <section class="progress-section">
+
+        <div class="progress-box">
+
+            <div>
+
+                <span>
+                    Your Learning Progress
+                </span>
+
+                <strong id="progressText">
+                    0%
+                </strong>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div
+                    id="progressFill"
+                    class="progress-fill">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONSTITUTION BASICS ================= -->
+
+    <section
+        class="content-section"
+        id="basics">
+
+        <div class="section-heading">
+
+            <p class="small-title">
+                SECTION 01
+            </p>
+
+            <h2>
+                Constitution Basics
+            </h2>
+
+            <p>
+                Start with the basic information
+                about the Indian Constitution.
+            </p>
+
+        </div>
+
+
+        <div class="info-grid">
+
+            <!-- Card 1 -->
+
+            <div class="info-card">
+
+                <div class="card-icon">
+                    📖
+                </div>
+
+                <h3>
+                    What is a Constitution?
+                </h3>
+
+                <p>
+                    A Constitution provides the basic framework
+                    for how a country is governed and how its
+                    institutions function.
+                </p>
+
+                <button
+                    onclick="showInfo('constitution')">
+                    Learn More →
+                </button>
+
+            </div>
+
+
+            <!-- Card 2 -->
+
+            <div class="info-card">
+
+                <div class="card-icon">
+                    📅
+                </div>
+
+                <h3>
+                    Adoption & Implementation
+                </h3>
+
+                <p>
+                    Learn about the important dates and
+                    events associated with the Constitution.
+                </p>
+
+                <button
+                    onclick="showInfo('dates')">
+                    Learn More →
+                </button>
+
+            </div>
+
+
+            <!-- Card 3 -->
+
+            <div class="info-card">
+
+                <div class="card-icon">
+                    👥
+                </div>
+
+                <h3>
+                    Constituent Assembly
+                </h3>
+
+                <p>
+                    Learn about the body that played a central
+                    role in framing the Constitution.
+                </p>
+
+                <button
+                    onclick="showInfo('assembly')">
+                    Learn More →
+                </button>
+
+            </div>
+
+
+            <!-- Card 4 -->
+
+            <div class="info-card">
+
+                <div class="card-icon">
+                    🏛️
+                </div>
+
+                <h3>
+                    Importance
+                </h3>
+
+                <p>
+                    Understand why the Constitution is important
+                    for the functioning of the country.
+                </p>
+
+                <button
+                    onclick="showInfo('importance')">
+                    Learn More →
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="infoBox"
+            class="info-box">
+        </div>
+
+    </section>
+
+
+    <!-- ================= PREAMBLE ================= -->
+
+    <section
+        class="preamble-section"
+        id="preamble">
+
+        <div class="section-heading">
+
+            <p class="small-title">
+                SECTION 02
+            </p>
+
+            <h2>
+                🇮🇳 The Preamble
+            </h2>
+
+            <p>
+                Understand the basic idea expressed
+                by the Preamble.
+            </p>
+
+        </div>
+
+
+        <div class="preamble-card">
+
+            <div class="preamble-icon">
+                🇮🇳
+            </div>
+
+            <h3>
+                We, the People of India
+            </h3>
+
+            <p>
+                The Preamble introduces the Constitution
+                and expresses important ideals and objectives
+                of the Indian constitutional system.
+            </p>
+
+            <div class="preamble-keywords">
+
+                <span>Sovereign</span>
+                <span>Socialist</span>
+                <span>Secular</span>
+                <span>Democratic</span>
+                <span>Republic</span>
+
+            </div>
+
+            <button
+                class="learn-btn"
+                onclick="markCompleted('preamble')">
+                ✓ Mark as Learned
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FUNDAMENTAL RIGHTS ================= -->
+
+    <section
+        class="content-section"
+        id="rights">
+
+        <div class="section-heading">
+
+            <p class="small-title">
+                SECTION 03
+            </p>
+
+            <h2>
+                ⚖️ Fundamental Rights
+            </h2>
+
+            <p>
+                Explore the major categories of Fundamental Rights
+                in simple language.
+            </p>
+
+        </div>
+
+
+        <div class="rights-grid">
+
+
+            <!-- Right 1 -->
+
+            <div class="right-card">
+
+                <span class="number">
+                    01
+                </span>
+
+                <h3>
+                    Right to Equality
+                </h3>
+
+                <p>
+                    Learn about the constitutional principle
+                    of equality.
+                </p>
+
+                <button
+                    onclick="showRight('equality')">
+                    Simple Explanation
+                </button>
+
+            </div>
+
+
+            <!-- Right 2 -->
+
+            <div class="right-card">
+
+                <span class="number">
+                    02
+                </span>
+
+                <h3>
+                    Right to Freedom
+                </h3>
+
+                <p>
+                    Explore the constitutional freedoms
+                    provided to citizens.
+                </p>
+
+                <button
+                    onclick="showRight('freedom')">
+                    Simple Explanation
+                </button>
+
+            </div>
+
+
+            <!-- Right 3 -->
+
+            <div class="right-card">
+
+                <span class="number">
+                    03
+                </span>
+
+                <h3>
+                    Right against Exploitation
+                </h3>
+
+                <p>
+                    Understand constitutional protection
+                    against exploitation.
+                </p>
+
+                <button
+                    onclick="showRight('exploitation')">
+                    Simple Explanation
+                </button>
+
+            </div>
+
+
+            <!-- Right 4 -->
+
+            <div class="right-card">
+
+                <span class="number">
+                    04
+                </span>
+
+                <h3>
+                    Freedom of Religion
+                </h3>
+
+                <p>
+                    Learn about freedom related
+                    to religion.
+                </p>
+
+                <button
+                    onclick="showRight('religion')">
+                    Simple Explanation
+                </button>
+
+            </div>
+
+
+            <!-- Right 5 -->
+
+            <div class="right-card">
+
+                <span class="number">
+                    05
+                </span>
+
+                <h3>
+                    Cultural & Educational Rights
+                </h3>
+
+                <p>
+                    Explore constitutional protection
+                    related to culture and education.
+                </p>
+
+                <button
+                    onclick="showRight('cultural')">
+                    Simple Explanation
+                </button>
+
+            </div>
+
+
+            <!-- Right 6 -->
+
+            <div class="right-card">
+
+                <span class="number">
+                    06
+                </span>
+
+                <h3>
+                    Constitutional Remedies
+                </h3>
+
+                <p>
+                    Learn about the constitutional
+                    remedies available for enforcement
+                    of Fundamental Rights.
+                </p>
+
+                <button
+                    onclick="showRight('remedies')">
+                    Simple Explanation
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="rightInfo"
+            class="right-info">
+        </div>
+
+    </section>
+
+
+    <!-- ================= FUNDAMENTAL DUTIES ================= -->
+
+    <section
+        class="duties-section"
+        id="duties">
+
+        <div class="section-heading">
+
+            <p class="small-title">
+                SECTION 04
+            </p>
+
+            <h2>
+                🇮🇳 Fundamental Duties
+            </h2>
+
+            <p>
+                Understand duties through simple explanations
+                and everyday examples.
+            </p>
+
+        </div>
+
+
+        <div class="duties-container">
+
+            <div class="duty-card">
+
+                <span>
+                    01
+                </span>
+
+                <h3>
+                    Respect the Constitution
+                </h3>
+
+                <p>
+                    Understand the importance of respecting
+                    the Constitution and its ideals.
+                </p>
+
+            </div>
+
+
+            <div class="duty-card">
+
+                <span>
+                    02
+                </span>
+
+                <h3>
+                    Promote Harmony
+                </h3>
+
+                <p>
+                    Understand the importance of harmony
+                    and respect among people.
+                </p>
+
+            </div>
+
+
+            <div class="duty-card">
+
+                <span>
+                    03
+                </span>
+
+                <h3>
+                    Protect the Environment
+                </h3>
+
+                <p>
+                    Learn about the responsibility of
+                    protecting the natural environment.
+                </p>
+
+            </div>
+
+
+            <div class="duty-card">
+
+                <span>
+                    04
+                </span>
+
+                <h3>
+                    Develop Scientific Temper</h3>
+
+                <p>
+                    Understand the importance of
+                    scientific thinking and inquiry.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="duty-note">
+
+            <h3>
+                💡 Why are Duties Important?
+            </h3>
+
+            <p>
+                Fundamental Duties remind citizens about
+                responsibilities that contribute to a
+                responsible society.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= QUICK CHECK ================= -->
+
+    <section
+        class="quiz-section"
+        id="quick-check">
+
+        <div class="section-heading">
+
+            <p class="small-title">
+                TEST YOURSELF
+            </p>
+
+            <h2>
+                🧠 Quick Check
+            </h2>
+
+            <p>
+                Test what you have learned.
+            </p>
+
+        </div>
+
+
+        <div class="quiz-card">
+
+            <p class="question-number">
+                Question 1
+            </p>
+
+            <h3 id="question">
+                Fundamental Duties are included in:
+            </h3>
+
+
+            <div class="options">
+
+                <button onclick="checkAnswer('A')">
+                    A. Part III
+                </button>
+
+                <button onclick="checkAnswer('B')">
+                    B. Part IVA
+                </button>
+
+                <button onclick="checkAnswer('C')">
+                    C. Part V
+                </button>
+
+                <button onclick="checkAnswer('D')">
+                    D. Part VI
+                </button>
+
+            </div>
+
+
+            <div
+                id="quizResult"
+                class="quiz-result">
+            </div>
+
+
+            <button
+                class="next-btn"
+                onclick="nextQuestion()">
+                Next Question →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BACK HOME ================= -->
+
+    <section class="back-section">
+
+        <a href="../index.html">
+            ← Back to Know India Home
+        </a>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div>
+            🇮🇳 KNOW INDIA
+        </div>
+
+        <p>
+            Learn • Understand • Participate
+        </p>
+
+        <p class="copyright">
+            © 2026 Know India
+        </p>
+
+    </footer>
+
+
+    <script src="../js/constitution.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Government Schemes | Know India</title>
+
+    <link rel="stylesheet" href="../css/schemes.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <div class="logo">🇮🇳 Know India</div>
+
+    <div class="menu" id="menu">
+
+        <a href="../index.html">Home</a>
+
+        <a href="constitution.html">Constitution</a>
+
+        <a href="rights.html">Rights & Duties</a>
+
+        <a href="government.html">Government</a>
+
+        <a href="india.html">Know India</a>
+
+        <a href="social-issues.html">Social Issues</a>
+
+        <a href="schemes.html">Schemes</a>
+
+    </div>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="badge">🏛️ CITIZEN AWARENESS</span>
+
+        <h1>Government Schemes</h1>
+
+        <p>
+            Explore government schemes and learn their
+            basic purpose in simple language.
+        </p>
+
+        <button onclick="scrollToSection('schemes')">
+            Explore Schemes ↓
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= INTRO ================= -->
+
+<section class="section">
+
+    <h2>📋 What are Government Schemes?</h2>
+
+    <p class="intro">
+
+        Government schemes are programmes or initiatives
+        designed to address particular public needs and
+        support different sections of society.
+
+    </p>
+
+    <div class="intro-grid">
+
+        <div class="intro-card">
+
+            <span>🎓</span>
+
+            <h3>Education</h3>
+
+            <p>
+                Schemes related to education and learning opportunities.
+            </p>
+
+        </div>
+
+
+        <div class="intro-card">
+
+            <span>👩</span>
+
+            <h3>Women</h3>
+
+            <p>
+                Programmes related to support, development
+                and opportunities for women.
+            </p>
+
+        </div>
+
+
+        <div class="intro-card">
+
+            <span>🌾</span>
+
+            <h3>Farmers</h3>
+
+            <p>
+                Programmes related to agriculture and farmers.
+            </p>
+
+        </div>
+
+
+        <div class="intro-card">
+
+            <span>🏥</span>
+
+            <h3>Health</h3>
+
+            <p>
+                Programmes related to healthcare and public health.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SCHEME EXPLORER ================= -->
+
+<section class="section scheme-section" id="schemes">
+
+    <h2>🔎 Scheme Explorer</h2>
+
+    <p class="section-subtitle">
+
+        Search a scheme or select a category.
+
+    </p>
+
+
+    <!-- SEARCH -->
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search scheme..."
+            onkeyup="searchSchemes()">
+
+        <button onclick="searchSchemes()">
+            🔍 Search
+        </button>
+
+    </div>
+
+
+    <!-- FILTER BUTTONS -->
+
+    <div class="filter-buttons">
+
+        <button onclick="filterSchemes('all')">
+            All
+        </button>
+
+        <button onclick="filterSchemes('education')">
+            🎓 Education
+        </button>
+
+        <button onclick="filterSchemes('women')">
+            👩 Women
+        </button>
+
+        <button onclick="filterSchemes('farmer')">
+            🌾 Farmer
+        </button>
+
+        <button onclick="filterSchemes('health')">
+            🏥 Health
+        </button>
+
+        <button onclick="filterSchemes('skill')">
+            💼 Skill
+        </button>
+
+    </div>
+
+
+    <!-- SCHEMES -->
+
+    <div class="scheme-grid" id="schemeGrid"></div>
+
+    <p id="noResult" class="no-result"></p>
+
+</section>
+
+
+<!-- ================= DETAILS ================= -->
+
+<section class="details-section">
+
+    <div class="details-box" id="detailsBox">
+
+        <h2>📚 Select a Scheme</h2>
+
+        <p>
+            Click on a scheme card to see its basic information.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= HOW TO VERIFY ================= -->
+
+<section class="section">
+
+    <h2>🔐 Verify Before You Apply</h2>
+
+    <div class="verify-grid">
+
+        <div class="verify-card">
+
+            <span>1️⃣</span>
+
+            <h3>Read Carefully</h3>
+
+            <p>
+                Understand the basic purpose and information
+                about a scheme.
+            </p>
+
+        </div>
+
+
+        <div class="verify-card">
+
+            <span>2️⃣</span>
+
+            <h3>Check Official Source</h3>
+
+            <p>
+                Verify current eligibility, documents,
+                benefits and application information.
+            </p>
+
+        </div>
+
+
+        <div class="verify-card">
+
+            <span>3️⃣</span>
+
+            <h3>Use Official Channel</h3>
+
+            <p>
+                Use the relevant official government portal
+                or authorised service channel.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= AWARENESS CHECK ================= -->
+
+<section class="quiz-section">
+
+    <div class="quiz-container">
+
+        <h2>🧠 Scheme Awareness Check</h2>
+
+        <p id="question"></p>
+
+        <div id="options" class="options"></div>
+
+        <p id="quizResult"></p>
+
+        <button
+            id="nextBtn"
+            onclick="nextQuestion()"
+            style="display:none;">
+
+            Next Question →
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= NOTE ================= -->
+
+<section class="note-section">
+
+    <h2>⚠️ Important Note</h2>
+
+    <p>
+
+        Scheme eligibility, benefits, documents, application
+        procedures and other details may change. Users should
+        verify the latest information through the relevant
+        official government source before taking action.
+
+    </p>
+
+</section>
+
+
+<!-- ================= BACK HOME ================= -->
+
+<div class="back-home">
+
+    <a href="../index.html">
+        ← Back to Home
+    </a>
+
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h3>🇮🇳 Know India</h3>
+
+    <p>
+        Know Your Rights. Know Your India.
+        Be an Aware Citizen.
+    </p>
+
+    <p>© 2026 Know India</p>
+
+</footer>
+
+
+<script src="../js/schemes.js"></script>
+
+</body>
+
+</html>

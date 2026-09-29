@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Government | Know India</title>
+
+    <link rel="stylesheet" href="../css/government.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">🇮🇳 Know India</div>
+
+        <div class="menu" id="menu">
+            <a href="../index.html">Home</a>
+            <a href="constitution.html">Constitution</a>
+            <a href="rights.html">Rights & Duties</a>
+            <a href="government.html">Government</a>
+        </div>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    </nav>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="badge">🏛️ CITIZEN AWARENESS</span>
+
+            <h1>Indian Government</h1>
+
+            <p>
+                Understand the basic structure of government
+                and learn how different institutions work.
+            </p>
+
+            <button onclick="scrollToSection('government')">
+                Start Learning ↓
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTRODUCTION -->
+    <section class="section">
+
+        <h2>🇮🇳 What is Government?</h2>
+
+        <p class="intro">
+            Government is the system through which a country is
+            administered and public functions are carried out.
+            In India, government functions are carried out at
+            different levels.
+        </p>
+
+        <div class="info-grid">
+
+            <div class="info-card">
+                <div class="icon">🇮🇳</div>
+                <h3>Union Government</h3>
+                <p>
+                    Works at the national level and deals with
+                    matters assigned to the Union.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <div class="icon">🏢</div>
+                <h3>State Government</h3>
+                <p>
+                    Works at the state level and handles
+                    matters assigned to states.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <div class="icon">🏘️</div>
+                <h3>Local Government</h3>
+                <p>
+                    Works at the local level through institutions
+                    such as municipalities and panchayats.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- GOVERNMENT INSTITUTIONS -->
+    <section class="section" id="government">
+
+        <h2>🏛️ Important Institutions</h2>
+
+        <p class="section-subtitle">
+            Click on a card to learn more.
+        </p>
+
+        <div class="institution-grid">
+
+            <div class="institution-card"
+                 onclick="showInfo('president')">
+
+                <div class="big-icon">🇮🇳</div>
+
+                <h3>President</h3>
+
+                <p>
+                    Constitutional head of the Union.
+                </p>
+
+                <button>Learn More</button>
+
+            </div>
+
+
+            <div class="institution-card"
+                 onclick="showInfo('pm')">
+
+                <div class="big-icon">🏛️</div>
+
+                <h3>Prime Minister</h3>
+
+                <p>
+                    Heads the Council of Ministers.
+                </p>
+
+                <button>Learn More</button>
+
+            </div>
+
+
+            <div class="institution-card"
+                 onclick="showInfo('parliament')">
+
+                <div class="big-icon">🏛️</div>
+
+                <h3>Parliament</h3>
+
+                <p>
+                    The Union legislature of India.
+                </p>
+
+                <button>Learn More</button>
+
+            </div>
+
+
+            <div class="institution-card"
+                 onclick="showInfo('supreme')">
+
+                <div class="big-icon">⚖️</div>
+
+                <h3>Supreme Court</h3>
+
+                <p>
+                    The highest court in India.
+                </p>
+
+                <button>Learn More</button>
+
+            </div>
+
+
+            <div class="institution-card"
+                 onclick="showInfo('state')">
+
+                <div class="big-icon">🏢</div>
+
+                <h3>State Government</h3>
+
+                <p>
+                    Government functioning at state level.
+                </p>
+
+                <button>Learn More</button>
+
+            </div>
+
+
+            <div class="institution-card"
+                 onclick="showInfo('local')">
+
+                <div class="big-icon">🏘️</div>
+
+                <h3>Local Government</h3>
+
+                <p>
+                    Government at local level.
+                </p>
+
+                <button>Learn More</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INFORMATION BOX -->
+    <section class="info-section">
+
+        <div class="information-box" id="informationBox">
+
+            <h2>📚 Select an Institution</h2>
+
+            <p>
+                Click on any institution above to see
+                a simple explanation.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PARLIAMENT -->
+    <section class="section parliament-section">
+
+        <h2>🏛️ Parliament of India</h2>
+
+        <p class="intro">
+            Parliament is the Union legislature of India.
+            It consists of the President and two Houses.
+        </p>
+
+        <div class="house-grid">
+
+            <div class="house-card">
+
+                <div class="house-icon">🏛️</div>
+
+                <h3>Lok Sabha</h3>
+
+                <p>
+                    The House of the People.
+                    Its members are directly elected by voters.
+                </p>
+
+            </div>
+
+
+            <div class="house-card">
+
+                <div class="house-icon">🏛️</div>
+
+                <h3>Rajya Sabha</h3>
+
+                <p>
+                    The Council of States.
+                    It represents the states and Union Territories
+                    in Parliament.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LEVELS -->
+    <section class="section">
+
+        <h2>📊 Three Levels of Government</h2>
+
+        <div class="levels">
+
+            <div class="level-card">
+
+                <span>1</span>
+
+                <h3>Union Level</h3>
+
+                <p>
+                    Government functioning at the national level.
+                </p>
+
+            </div>
+
+
+            <div class="level-card">
+
+                <span>2</span>
+
+                <h3>State Level</h3>
+
+                <p>
+                    Government functioning within a state.
+                </p>
+
+            </div>
+
+
+            <div class="level-card">
+
+                <span>3</span>
+
+                <h3>Local Level</h3>
+
+                <p>
+                    Government functioning in local areas,
+                    such as villages and cities.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUICK CHECK -->
+    <section class="quiz-section">
+
+        <div class="quiz-container">
+
+            <h2>🧠 Quick Check</h2>
+
+            <p id="question">
+                Which is the Union legislature of India?
+            </p>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, 'correct')">
+                    Parliament
+                </button>
+
+                <button onclick="checkAnswer(this, 'wrong')">
+                    Municipality
+                </button>
+
+                <button onclick="checkAnswer(this, 'wrong')">
+                    Gram Panchayat
+                </button>
+
+                <button onclick="checkAnswer(this, 'wrong')">
+                    District Court
+                </button>
+
+            </div>
+
+            <p id="quizResult"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- OFFICIAL SOURCE -->
+    <section class="source-section">
+
+        <h2>🔎 Know More</h2>
+
+        <p>
+            For detailed and official information about
+            Indian government institutions, users should
+            refer to official government sources.
+        </p>
+
+        <button onclick="showSourceMessage()">
+            View Source Information
+        </button>
+
+        <p id="sourceMessage"></p>
+
+    </section>
+
+
+    <!-- BACK HOME -->
+    <div class="back-home">
+
+        <a href="../index.html">
+            ← Back to Home
+        </a>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>🇮🇳 Know India</h3>
+
+        <p>
+            Know Your Rights. Know Your India.
+            Be an Aware Citizen.
+        </p>
+
+        <p>© 2026 Know India</p>
+
+    </footer>
+
+
+    <script src="../js/government.js"></script>
+
+</body>
+</html>

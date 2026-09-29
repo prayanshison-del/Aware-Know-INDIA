@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Know Your India | Know India</title>
+
+    <link rel="stylesheet" href="../css/india.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+
+    <div class="logo">🇮🇳 Know India</div>
+
+    <div class="menu" id="menu">
+        <a href="../index.html">Home</a>
+        <a href="constitution.html">Constitution</a>
+        <a href="rights.html">Rights & Duties</a>
+        <a href="government.html">Government</a>
+        <a href="india.html">Know India</a>
+    </div>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+</nav>
+
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="badge">🇮🇳 EXPLORE INDIA</span>
+
+        <h1>Know Your India</h1>
+
+        <p>
+            Explore the states, Union Territories, culture,
+            heritage and interesting facts of India.
+        </p>
+
+        <button onclick="scrollToSection('explore')">
+            Explore India ↓
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- INTRODUCTION -->
+<section class="section">
+
+    <h2>🇮🇳 India at a Glance</h2>
+
+    <p class="intro">
+        India is a diverse country with different regions,
+        cultures, traditions, languages, food and heritage.
+        Explore some basic information through this module.
+    </p>
+
+    <div class="facts-grid">
+
+        <div class="fact-card">
+            <span>🗺️</span>
+            <h3>States & UTs</h3>
+            <p>Explore India's administrative divisions.</p>
+        </div>
+
+        <div class="fact-card">
+            <span>🎭</span>
+            <h3>Culture</h3>
+            <p>Learn about India's diverse cultural traditions.</p>
+        </div>
+
+        <div class="fact-card">
+            <span>🏛️</span>
+            <h3>Heritage</h3>
+            <p>Discover India's historical and cultural heritage.</p>
+        </div>
+
+        <div class="fact-card">
+            <span>🎉</span>
+            <h3>Festivals</h3>
+            <p>Explore festivals celebrated across India.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- STATE EXPLORER -->
+<section class="section explorer-section" id="explore">
+
+    <h2>🗺️ State Explorer</h2>
+
+    <p class="section-subtitle">
+        Select a state or Union Territory to see basic information.
+    </p>
+
+    <div class="state-selector">
+
+        <select id="stateSelect" onchange="showState()">
+
+            <option value="">-- Select a State / UT --</option>
+
+            <option value="uttar-pradesh">Uttar Pradesh</option>
+            <option value="rajasthan">Rajasthan</option>
+            <option value="maharashtra">Maharashtra</option>
+            <option value="gujarat">Gujarat</option>
+            <option value="kerala">Kerala</option>
+            <option value="west-bengal">West Bengal</option>
+            <option value="tamil-nadu">Tamil Nadu</option>
+            <option value="delhi">Delhi</option>
+            <option value="jammu-kashmir">Jammu & Kashmir</option>
+
+        </select>
+
+    </div>
+
+
+    <div class="state-info" id="stateInfo">
+
+        <h3>🇮🇳 Select a State</h3>
+
+        <p>
+            Choose a state or Union Territory from the
+            dropdown above to explore it.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- CULTURE -->
+<section class="section">
+
+    <h2>🎭 Explore Indian Diversity</h2>
+
+    <div class="culture-grid">
+
+        <div class="culture-card">
+
+            <div class="culture-icon">🎭</div>
+
+            <h3>Culture</h3>
+
+            <p>
+                India has diverse cultural traditions,
+                art forms and customs.
+            </p>
+
+        </div>
+
+
+        <div class="culture-card">
+
+            <div class="culture-icon">🍛</div>
+
+            <h3>Food</h3>
+
+            <p>
+                Different regions of India have
+                their own traditional cuisines.
+            </p>
+
+        </div>
+
+
+        <div class="culture-card">
+
+            <div class="culture-icon">🎵</div>
+
+            <h3>Music & Dance</h3>
+
+            <p>
+                India has many classical and
+                regional music and dance traditions.
+            </p>
+
+        </div>
+
+
+        <div class="culture-card">
+
+            <div class="culture-icon">🏛️</div>
+
+            <h3>Heritage</h3>
+
+            <p>
+                India's heritage includes historical
+                places, monuments and traditions.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- INTERESTING FACTS -->
+<section class="section facts-section">
+
+    <h2>💡 Quick Facts</h2>
+
+    <div class="quick-facts">
+
+        <div>
+            <strong>🇮🇳</strong>
+            <p>India is known for its cultural diversity.</p>
+        </div>
+
+        <div>
+            <strong>🗣️</strong>
+            <p>Many languages are spoken across different regions.</p>
+        </div>
+
+        <div>
+            <strong>🎨</strong>
+            <p>India has diverse traditional art and craft forms.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- QUIZ -->
+<section class="quiz-section">
+
+    <div class="quiz-container">
+
+        <h2>🧠 India Quiz</h2>
+
+        <p id="question">
+            Question will appear here.
+        </p>
+
+        <div id="options" class="options"></div>
+
+        <p id="quizResult"></p>
+
+        <button
+            id="nextBtn"
+            onclick="nextQuestion()"
+            style="display:none;">
+            Next Question →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- BACK HOME -->
+<div class="back-home">
+
+    <a href="../index.html">
+        ← Back to Home
+    </a>
+
+</div>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <h3>🇮🇳 Know India</h3>
+
+    <p>
+        Know Your Rights. Know Your India.
+        Be an Aware Citizen.
+    </p>
+
+    <p>© 2026 Know India</p>
+
+</footer>
+
+
+<script src="../js/india.js"></script>
+
+</body>
+</html>

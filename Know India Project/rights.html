@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rights & Duties | Know India</title>
+
+    <link rel="stylesheet" href="../css/rights.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            🇮🇳 <span>Know India</span>
+        </div>
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="constitution.html">Constitution</a>
+            <a href="#rights">Rights</a>
+            <a href="#duties">Duties</a>
+            <a href="#quiz">Quiz</a>
+        </nav>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <p class="small-title">
+                KNOW YOUR RIGHTS & DUTIES
+            </p>
+
+            <h1>
+                ⚖️ Rights & Duties
+            </h1>
+
+            <p>
+                Learn about Fundamental Rights and Fundamental
+                Duties through simple explanations and examples.
+            </p>
+
+            <button
+                class="start-btn"
+                onclick="scrollToSection('rights')">
+                Start Learning →
+            </button>
+
+        </div>
+
+        <div class="hero-icon">
+            ⚖️
+        </div>
+
+    </section>
+
+
+    <!-- RIGHTS SECTION -->
+    <section class="section" id="rights">
+
+        <div class="heading">
+
+            <p class="small-title">
+                SECTION 01
+            </p>
+
+            <h2>
+                ⚖️ Fundamental Rights
+            </h2>
+
+            <p>
+                Explore the major categories of Fundamental Rights
+                in simple language.
+            </p>
+
+        </div>
+
+
+        <div class="rights-grid">
+
+            <div class="right-card">
+
+                <span>01</span>
+
+                <h3>Right to Equality</h3>
+
+                <p>
+                    Understand the constitutional principle
+                    of equality before law.
+                </p>
+
+                <button onclick="showRight('equality')">
+                    Learn More
+                </button>
+
+            </div>
+
+
+            <div class="right-card">
+
+                <span>02</span>
+
+                <h3>Right to Freedom</h3>
+
+                <p>
+                    Learn about important constitutional
+                    freedoms.
+                </p>
+
+                <button onclick="showRight('freedom')">
+                    Learn More
+                </button>
+
+            </div>
+
+
+            <div class="right-card">
+
+                <span>03</span>
+
+                <h3>Right against Exploitation</h3>
+
+                <p>
+                    Learn about constitutional protection
+                    against certain forms of exploitation.
+                </p>
+
+                <button onclick="showRight('exploitation')">
+                    Learn More
+                </button>
+
+            </div>
+
+
+            <div class="right-card">
+
+                <span>04</span>
+
+                <h3>Freedom of Religion</h3>
+
+                <p>
+                    Understand constitutional freedom
+                    relating to religion.
+                </p>
+
+                <button onclick="showRight('religion')">
+                    Learn More
+                </button>
+
+            </div>
+
+
+            <div class="right-card">
+
+                <span>05</span>
+
+                <h3>Cultural & Educational Rights</h3>
+
+                <p>
+                    Learn about constitutional protection
+                    related to cultural and educational interests.
+                </p>
+
+                <button onclick="showRight('cultural')">
+                    Learn More
+                </button>
+
+            </div>
+
+
+            <div class="right-card">
+
+                <span>06</span>
+
+                <h3>Constitutional Remedies</h3>
+
+                <p>
+                    Understand the constitutional mechanism
+                    for enforcement of Fundamental Rights.
+                </p>
+
+                <button onclick="showRight('remedies')">
+                    Learn More
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT INFORMATION -->
+        <div id="rightInfo"></div>
+
+    </section>
+
+
+    <!-- DUTIES SECTION -->
+    <section class="section duties-section" id="duties">
+
+        <div class="heading">
+
+            <p class="small-title">
+                SECTION 02
+            </p>
+
+            <h2>
+                🇮🇳 Fundamental Duties
+            </h2>
+
+            <p>
+                Learn about important responsibilities
+                of citizens.
+            </p>
+
+        </div>
+
+
+        <div class="duties-grid">
+
+            <div class="duty-card">
+
+                <span>01</span>
+
+                <h3>
+                    Respect the Constitution
+                </h3>
+
+                <p>
+                    Understand the importance of respecting
+                    the Constitution and its ideals.
+                </p>
+
+            </div>
+
+
+            <div class="duty-card">
+
+                <span>02</span>
+
+                <h3>
+                    Respect National Symbols
+                </h3>
+
+                <p>
+                    Learn about respecting national symbols
+                    and ideals.
+                </p>
+
+            </div>
+
+
+            <div class="duty-card">
+
+                <span>03</span>
+
+                <h3>
+                    Promote Harmony
+                </h3>
+
+                <p>
+                    Understand the importance of harmony
+                    and brotherhood among people.
+                </p>
+
+            </div>
+
+
+            <div class="duty-card">
+
+                <span>04</span>
+
+                <h3>
+                    Protect Environment
+                </h3>
+
+                <p>
+                    Learn about the responsibility to protect
+                    the natural environment.
+                </p>
+
+            </div>
+
+
+            <div class="duty-card">
+
+                <span>05</span>
+
+                <h3>
+                    Develop Scientific Temper
+                </h3>
+
+                <p>
+                    Understand the importance of scientific
+                    thinking and inquiry.
+                </p>
+
+            </div>
+
+
+            <div class="duty-card">
+
+                <span>06</span>
+
+                <h3>
+                    Protect Public Property
+                </h3>
+
+                <p>
+                    Learn why citizens should protect
+                    public property.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DAILY LIFE -->
+    <section class="example-section">
+
+        <div class="heading">
+
+            <p class="small-title">
+                REAL LIFE
+            </p>
+
+            <h2>
+                💡 Rights & Duties in Daily Life
+            </h2>
+
+        </div>
+
+
+        <div class="example-box">
+
+            <h3>
+                Example
+            </h3>
+
+            <p>
+                A responsible citizen should understand their
+                rights while also respecting the rights of others
+                and contributing responsibly to society.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUIZ -->
+    <section class="quiz-section" id="quiz">
+
+        <div class="heading">
+
+            <p class="small-title">
+                TEST YOURSELF
+            </p>
+
+            <h2>
+                🧠 Quick Check
+            </h2>
+
+            <p>
+                Check what you have learned.
+            </p>
+
+        </div>
+
+
+        <div class="quiz-card">
+
+            <p id="questionNumber">
+                Question 1
+            </p>
+
+            <h3 id="question">
+                Which of the following is a Fundamental Right?
+            </h3>
+
+
+            <div class="options">
+
+                <button onclick="checkAnswer('A')">
+                    A. Right to Equality
+                </button>
+
+                <button onclick="checkAnswer('B')">
+                    B. Right to Tax
+                </button>
+
+                <button onclick="checkAnswer('C')">
+                    C. Right to Government Job
+                </button>
+
+                <button onclick="checkAnswer('D')">
+                    D. Right to Free Travel
+                </button>
+
+            </div>
+
+
+            <div id="quizResult"></div>
+
+
+            <button
+                class="next-btn"
+                onclick="nextQuestion()">
+                Next Question →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- BACK -->
+    <section class="back-section">
+
+        <a href="../index.html">
+            ← Back to Know India Home
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>
+            🇮🇳 KNOW INDIA
+        </h3>
+
+        <p>
+            Learn • Understand • Be an Aware Citizen
+        </p>
+
+        <p>
+            © 2026 Know India
+        </p>
+
+    </footer>
+
+
+    <script src="../js/rights.js"></script>
+
+</body>
+
+</html>
